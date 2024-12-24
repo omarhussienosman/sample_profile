@@ -1,9 +1,10 @@
 import React from "react";
 import profile from "../../public/profile.jpg"
 import Image from "next/image";
+import Link from "next/link";
 function Navbar() {
   return (
-    <div className="flex flex-row gap-4 bg-[#404040]">
+    <div className="flex flex-row gap-4 justify-between p-[10px] bg-[#404040]">
       <div className="flex flex-col gap-4 p-[20px] bg-[#414a4c] justify-center items-start"  >
         <div className="flex flex-row gap-2 ">
           <Image className="rounded-[50%]" width={50} height={50} src={profile} alt="test" />
@@ -36,6 +37,29 @@ function Navbar() {
             <p className="text-[#FFFFFF]">+249995542431</p>
           </div>
         </div>
+      </div>
+      <div className="flex flex-row gap-4 pr-[40px] ">
+        <div className="p-[10px]">
+          <Link className="text-[#ffffff]" href={"#aboutme"}>
+            AboutMe
+          </Link>
+        </div>
+        <div className="p-[10px]">
+          <Link className="text-[#ffffff]" href={"#skills"}>
+            Skills
+          </Link>
+        </div>
+        <div className="p-[10px]">
+          <Link className="text-[#ffffff]" href={"#projects"}>
+            Projects
+          </Link>
+        </div>
+        <div className="p-[10px]">
+          <Link className="text-[#ffffff]" href={"#recommendations"}>
+            Recommendations
+          </Link>
+        </div>
+
       </div>
     </div>
   );
