@@ -45,7 +45,7 @@ function Navbar() {
           </Link>
         </div>
         <div className="p-[10px]">
-          <Link className="text-[#ffffff]" href={"#skills"}>
+          <Link className="text-[#ffffff] underline" href={"#skills"}>
             Skills
           </Link>
         </div>
